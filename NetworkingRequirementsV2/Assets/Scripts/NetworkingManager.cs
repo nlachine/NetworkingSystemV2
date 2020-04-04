@@ -391,7 +391,8 @@ public class NetworkingManager : MonoBehaviour
                             {
                                 clients[i].inWalkAround = true;
                             }
-                            else
+                            
+                            if (clients[i].playerObj != null)
                             {
                                 clients[i].playerObj.previousPos = clients[i].playerObj.currentPos;
                                 clients[i].playerObj.previousRot = clients[i].playerObj.currentRot;

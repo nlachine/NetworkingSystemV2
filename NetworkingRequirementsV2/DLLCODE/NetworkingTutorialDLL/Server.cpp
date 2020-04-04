@@ -134,6 +134,10 @@ void Server::ProcessMessage(const char* msg, sockaddr_in clientAddr)
 		{
 			BroadcastMessage(msg, clientAddr);
 		}
+		else if (msg[0] == 't')
+		{
+			BroadcastMessage(msg, clientAddr);
+		}
 		else
 		{
 			// Validate the packet
